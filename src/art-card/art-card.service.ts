@@ -11,7 +11,7 @@ export class ArtCardService {
   }
 
   findOne(id: number): ArtCardDto | null {
-    return this.artCardDAO.findOne(id); // Atualize o método `findOne` no DAO
+    return this.artCardDAO.findOne(id); 
   }
 
   create(newArtCard: Omit<ArtCardDto, 'id' | 'createdAt'>): ArtCardDto{
